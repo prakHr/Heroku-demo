@@ -30,7 +30,7 @@ def edit():
         #sk_image=sk_image.flatten()
         #sk_image = sk_image.transpose(1,0,2).reshape(shapes_dim[1],-1) #convert to 2D array
         #image=img_as_ubyte(sk_image)
-        return render_template("edit-11.html", user_image = os.path.join(os.getcwd()+"\\"+app.config['UPLOAD_FOLDER'],barcodeName+".png"))
+        return render_template("edit-11.html", user_image = os.path.join(os.getcwd()+"/"+app.config['UPLOAD_FOLDER'],barcodeName+".png"))
     
     return render_template("index.html")
 
