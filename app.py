@@ -2,6 +2,7 @@ from flask import Flask,g,render_template,redirect,url_for,jsonify,request,flash
 import barcode
 from barcode.writer import ImageWriter
 from PIL import Image
+import skimage
 from skimage.io import imread
 from skimage.util import img_as_ubyte
 import os
