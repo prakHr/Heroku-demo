@@ -17,7 +17,7 @@ gr.Interface(fn=greet,inputs="text",outputs="text").launch()
 def print_barcode(barcode_Name):
     Code_128="code128"
     ean=barcode.get(Code_128,barcode_Name,writer=ImageWriter())
-    f=ean.save(os.getcwd()+"\\static\\people_photo\\"+barcode_Name)
+    f=ean.save(os.getcwd()+"\\"+barcode_Name)
     sk_image=imread(f)
     image=img_as_ubyte(sk_image)
     return image
