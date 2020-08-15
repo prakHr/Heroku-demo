@@ -1,0 +1,4 @@
+Flask==1.1.1
+pyBarcode==0.11.0
+Pillow==6.2.1
+skimage==0.17.2

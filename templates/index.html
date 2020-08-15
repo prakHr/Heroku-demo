@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Input barcode name</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+	<form name="sentMessage" id="contactForm" action="/edit-11/{{barcodeName}}" method="POST" novalidate>
+        <!--barcodeName,barcodeNumber,kiranaName,phone_no-->
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls">
+                <label>barcodeName</label>
+                <input type="text" class="form-control" placeholder="Give your barcode a name" id="barcodeName" name="barcodeName" required="" data-validation-required-message="Please enter your barcode name.">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            
+            <br>
+            <!--<div id="success"></div>-->
+            <input class="btn btn-primary" type="submit" value="Submit" id="sendMessageButton">
+
+            <!--<div class="form-group">-->
+              <!-- <button type="submit" class="btn btn-primary" id="sendMessageButton">Submit</button> -->
+            <!--</div>-->
+          </form>
+
+
+</body>
+</html>
